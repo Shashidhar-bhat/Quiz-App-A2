@@ -14,6 +14,30 @@ A fully functional and responsive Quiz Application built using **React.js**. Thi
 
 ---
 
+## How It Works
+
+1. **Question Rendering**:  
+   - The questions and options are imported from `data.js`, which contains a JSON array of questions and answers.
+   - The app starts with the first question displayed dynamically.
+
+2. **Answer Selection**:  
+   - Users can select an answer by clicking on an option.  
+   - The selected option is highlighted using CSS classes (`selected`).
+
+3. **Next Question Logic**:  
+   - Clicking the "Next" button checks if the selected answer is correct.  
+   - If correct, the score is incremented.  
+   - The app then moves to the next question. If it's the last question, the quiz ends.
+
+4. **Score Calculation**:  
+   - The app keeps track of the score using React's `useState`.  
+   - Once all questions are answered, the final score is displayed along with the total number of questions.
+
+5. **Quiz Completion**:  
+   - When the quiz ends, a summary screen shows the user’s score and the total questions.
+
+---
+
 ## Technologies Used
 
 - **React.js**: Component-based UI library for building the frontend.
